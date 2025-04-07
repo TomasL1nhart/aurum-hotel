@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Abrakadabra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header {
+            background: url('header.png') no-repeat center center;
+            background-size: cover;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar {
+            background-color: #1f1f1f;
+        }
+
+        .card {
+            background-color: #2a2a2a;
+            border: none;
+            color: #ffffff;
+        }
+
+        .card-title {
+            color: #ff9800;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .gallery img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.5);
+        }
+
+        footer {
+            background-color: #1f1f1f;
+        }
+
+        footer p {
+            color: #e0e0e0;
+        }
+
+        .btn-primary {
+            background-color: #ff9800;
+            border-color: #ff9800;
+        }
+
+        .btn-primary:hover {
+            background-color: #e68900;
+            border-color: #e68900;
+        }
+        @media (max-width: 768px) {
+            .navbar-brand span {
+                font-size: 16px;
+            }
+            .carousel-item img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand with-logo" href="#">
+            <img src="logo.webp" alt="Logo">
+            <span>Hotel Abrakadabra</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center">Hotel Abrakadabra</h1>
+            <p class="text-center">BestHotel in the world</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="about" class="mb-5">
+            <h2>About Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem corporis quia, nesciunt totam adipisci veniam minus at quae iusto cupiditate? Nam explicabo molestiae, illum at iure ipsa sint sunt veritatis.</p>
+        </section>
+
+        <section id="services" class="mb-5">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Tettetetet</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum quaerat placeat dolor doloribus odit beatae voluptas iste ex. Commodi autem voluptatum voluptate nesciunt consectetur reprehenderit dignissimos illum! Dolore, obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Atatatata</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, ducimus vitae? Accusamus nesciunt, in suscipit illum, beatae harum asperiores tempora sint delectus nisi rem ullam doloribus animi debitis sequi. Debitis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Atitititit</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia iste nulla debitis et doloremque aperiam facilis blanditiis dolorem veritatis totam veniam maxime minima distinctio itaque, neque eaque rem maiores excepturi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="mb-5">
+            <h2>Gallery</h2>
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="1.jpeg" class="d-block w-100" alt="Gaming Setup 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="2.jpeg" class="d-block w-100" alt="Gaming Setup 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="3.webp" class="d-block w-100" alt="Gaming Setup 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us</button>
+
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </main>
+    </body>
+    </html>
